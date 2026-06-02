@@ -34,10 +34,18 @@ task-board/
 ## 開発コマンド
 
 ```bash
-npm install   # 依存関係のインストール
-npm run dev   # 開発サーバー起動 (http://localhost:5173)
-npm run build # プロダクションビルド
+npm install      # 依存関係のインストール
+npm run dev      # 開発サーバー起動 (http://localhost:5173)
+npm run build    # プロダクションビルド
+npm run deploy   # GitHub Pages へデプロイ（ビルド→gh-pagesブランチへプッシュ）
 ```
+
+## GitHub Pages
+
+- URL: https://akihiro14.github.io/task-board/
+- `vite.config.js` の `base: '/task-board/'` でサブパスに対応
+- `npm run deploy` で `gh-pages` ブランチへ自動デプロイ
+- GitHubリポジトリの Settings → Pages → Source を `gh-pages` ブランチに設定すること
 
 ## Git 運用ルール
 

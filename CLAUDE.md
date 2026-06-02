@@ -4,11 +4,20 @@
 
 Reactで作成したタスク管理ボードアプリケーション。
 
+## デプロイ先
+
+https://akihiro14.github.io/task-board/
+
 ## 技術スタック
 
-- React 19
-- Vite 8
-- JavaScript (JSX)
+| カテゴリ | 技術 | バージョン |
+|---|---|---|
+| UIライブラリ | React | 19 |
+| ビルドツール | Vite | 8 |
+| 言語 | JavaScript (JSX) | ES2022+ |
+| スタイリング | CSS (vanilla) | - |
+| 永続化 | localStorage | ブラウザ標準 |
+| デプロイ | gh-pages | 6 |
 
 ## ディレクトリ構成
 
@@ -30,6 +39,16 @@ task-board/
 - チェックボックスで完了・未完了を切り替え
 - タスクを削除
 - 完了済みのタスクはグレー・打ち消し線で表示
+- ローカルストレージによるタスクの永続化
+
+## コンポーネント命名規約
+
+- **ファイル名**: PascalCase（例: `App.jsx`, `TaskItem.jsx`）
+- **コンポーネント関数名**: ファイル名と同じ PascalCase
+- **CSS クラス名**: kebab-case（例: `.task-list`, `.input-row`）
+- **イベントハンドラ**: `handle` プレフィックス（例: `handleKeyDown`）
+- **状態操作関数**: 動詞 + 対象（例: `addTask`, `toggleTask`, `deleteTask`）
+- **state 変数**: camelCase の名詞（例: `tasks`, `input`）
 
 ## 開発コマンド
 

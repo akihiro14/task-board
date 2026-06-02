@@ -6,7 +6,7 @@ Reactで作成したタスク管理ボードアプリケーション。
 
 ## デプロイ先
 
-https://akihiro14.github.io/task-board/
+https://akihiro14.github.io/task-board/ ✅ 公開済み（2026-06-02）
 
 ## 技術スタック
 
